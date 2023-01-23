@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoreboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"
+        defer></script>
+        <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-dark text-light">
+
+    <div class="container">
+        <div class="row justify-content-center p-5 m-3">
+            <div class="col-6 d-flex justify-content-center">
+                <div class="scoreboard p-3 text-center">
+                    <h1>Team 1</h1>
+                    <p id="team-one-score">0</p>
+                    <button class="btn btn-danger" onclick="teamOneClick()">Team 1 Scores</button>
+                </div>
+                <div class="col-6 d-flex justify-content-center">
+                    <div class="scoreboard p-3 text-center">
+                        <h1>Team 2</h1>
+                        <p id="team-two-score">0</p>
+                        <button class="btn btn-danger" onclick="teamTwoClick()">Team 2 Scores</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center pt-3">
+                <button class="btn btn-danger" onclick="resetScore()">Reset</button>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+
+</body>
+
+</html>
